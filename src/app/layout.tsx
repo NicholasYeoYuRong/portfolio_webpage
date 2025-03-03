@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import Header from "@/components/Header"
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`bg-indigo-500/20  ${inter.className}`}>
+      <head>
+        {}
+      </head>
+      <body className={`bg-stone-500/0  ${inter.className}`}>
+        <ShootingStars />
+        <StarsBackground />
         <Providers>
           <Header />
           {children}
         </Providers>
       </body>
     </html>
+
   );
 }

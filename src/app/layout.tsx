@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
+import { ThemeProvider } from "./providers";
 import Header from "@/components/Header"
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,17 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en">
-      <head>
-        {}
-      </head>
+    <html lang="en">
+      <head />
       <body className={`bg-stone-500/0  ${inter.className}`}>
         <ShootingStars />
         <StarsBackground />
-        <Providers>
-          <Header />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange>
+          <Header/>
           {children}
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
 

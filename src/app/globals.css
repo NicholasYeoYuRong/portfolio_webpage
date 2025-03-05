@@ -119,3 +119,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Burger menu overrides */
+.ant-drawer-content-wrapper,
+.ant-drawer-content,
+.ant-menu,
+.ant-menu-item,
+.ant-menu-submenu,
+.ant-menu-submenu-title {
+  background-color: transparent !important;
+}
+
+.ant-drawer-mask {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.ant-menu-item-active,
+.ant-menu-submenu-active {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.ant-menu-item-divider {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}

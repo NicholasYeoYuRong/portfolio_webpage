@@ -5,6 +5,7 @@ import { ThemeProvider } from "./providers";
 import Header from "@/components/Header"
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+import  ScrollToTop  from "@/components/ScrollToTop"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,6 +33,7 @@ export default function RootLayout({
           disableTransitionOnChange>
           <Header/>
           {children}
+          <ScrollToTop/>
         </ThemeProvider>
       </body>
     </html>

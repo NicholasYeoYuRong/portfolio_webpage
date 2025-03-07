@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <SplashCursor/>
-      <div className="relative flex-col space-y-[9vh] h-[1200] items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60">
+      <div className="relative flex-col space-y-[15vh] h-[1200] items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60">
         <MorphingText texts={texts} className="opacity-65" />
         <Globe />
       </div>

@@ -72,10 +72,10 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
-        const { width, height } = canvas.getBoundingClientRect();
-        canvas.width = width;
-        canvas.height = height;
-        setStars(generateStars(width, height));
+        // const { width, height } = canvas.getBoundingClientRect();
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        setStars(generateStars(canvas.width, canvas.height));
       }
     };
 
@@ -137,7 +137,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className={cn("h-full w-full absolute inset-0", className)}
+      className={cn("fixed top-0 left-0 w-screen h-screen", className)}
     />
   );
 };

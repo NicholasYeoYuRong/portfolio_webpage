@@ -1,10 +1,11 @@
 "use client"
 
 import * as React from "react"
-import { motion, MotionConfig } from "framer-motion"
+import { motion, HTMLMotionProps } from "framer-motion"
 import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils"
 import { LucideIcon } from "lucide-react"
+import Link from "next/link"
 
 interface MenuItem {
   icon: LucideIcon | React.FC
@@ -74,7 +75,7 @@ export const MenuBar = React.forwardRef<HTMLDivElement, MenuBarProps>(
         )}
         initial="initial"
         whileHover="hover"
-        {...props}
+        {...props as HTMLMotionProps<"nav">}
       >
         <motion.div
           className={`absolute -inset-2 bg-gradient-radial from-transparent ${
@@ -91,8 +92,7 @@ export const MenuBar = React.forwardRef<HTMLDivElement, MenuBarProps>(
 
             return (
               <motion.li key={item.label} className="relative">
-                <button
-                  onClick={() => onItemClick?.(item.label)}
+                <Link href={item.href} passHref
                   className="block w-full"
                 >
                   <motion.div
@@ -100,6 +100,7 @@ export const MenuBar = React.forwardRef<HTMLDivElement, MenuBarProps>(
                     style={{ perspective: "600px" }}
                     whileHover="hover"
                     initial="initial"
+                    onClick={() => onItemClick?.(item.label)}
                   >
                     <motion.div
                       className="absolute inset-0 z-0 pointer-events-none"
@@ -163,7 +164,7 @@ export const MenuBar = React.forwardRef<HTMLDivElement, MenuBarProps>(
                       <span>{item.label}</span>
                     </motion.div>
                   </motion.div>
-                </button>
+                </Link>
               </motion.li>
             )
           })}

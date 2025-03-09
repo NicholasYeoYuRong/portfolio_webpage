@@ -57,7 +57,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		animation: {
-  			'shiny-text': 'shiny-text 8s infinite',
+  			'shiny-text': 'shiny-text 8s infinite'
   		},
   		keyframes: {
   			'shiny-text': {

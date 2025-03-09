@@ -12,7 +12,7 @@ export default function Header() {
                 <MenuBarDemo/>
             </div>
             <Avatar className="flex items-center">
-                <AvatarImage src="/images/profile.svg" />
+                <AvatarImage src="/images/profile.jpeg" />
                 <AvatarFallback>NY</AvatarFallback>
             </Avatar>
         </div>

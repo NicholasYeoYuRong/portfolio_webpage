@@ -18,7 +18,7 @@ export default function Home() {
     <div>
       
       <SplashCursor/>
-      <div className="relative flex-col items-center justify-center px-10 pb-40 pt-8 md:pb-60">
+      <div className="relative flex-col items-center justify-center px-20 pb-40 pt-8 md:pb-60">
 
         <MorphingText texts={texts} className="opacity-65" />
         
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
 
-        <div className="z-10 text-5xl sm:text-7xl md:text-9xl flex flex-col gap-12 items-center justify-center font-overused-grotesk">
+        <div className="z-10 text-5xl sm:text-7xl md:text-9xl flex flex-col gap-3 items-center justify-center font-overused-grotesk">
           <TextShimmer
               duration={1.2}
               className='text-2xl font-medium [--base-color:theme(colors.yellow.600)] [--base-gradient-color:theme(colors.yellow.200)] dark:[--base-color:theme(colors.yellow.700)] dark:[--base-gradient-color:theme(colors.yellow.400)]'
@@ -38,7 +38,7 @@ export default function Home() {
               duration={1.2}
               className='text-2xl font-medium [--base-color:theme(colors.yellow.600)] [--base-gradient-color:theme(colors.yellow.200)] dark:[--base-color:theme(colors.yellow.700)] dark:[--base-gradient-color:theme(colors.yellow.400)]'
             >
-              You can play with the line by the way...
+              Try playing with the line !
           </TextShimmer>
           <ElasticLine
                 releaseThreshold={50}
@@ -59,11 +59,9 @@ export default function Home() {
 
           <AppleCardsCarouselDemo/>
 
+
            
         </div>
-
-
-        <p className="">HEAD POSITION ESTIMATION</p>
       </div>
     </div>
   );

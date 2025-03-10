@@ -57,7 +57,9 @@ export default function Home() {
                 toFontVariationSettings="'wght' 800, 'slnt' -10"
               />     
 
-          <AppleCardsCarouselDemo/>
+          <section id="projects">
+            <AppleCardsCarouselDemo/>
+          </section>
 
 
            

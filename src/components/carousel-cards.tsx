@@ -75,13 +75,11 @@ const BitesWithinContent = () => {
             <span className="font-bold text-neutral-700">
               Functions: Login & Create Account
             </span>
-            <p>
               All data will be inserted and pulled with the use of{" "} 
-              <span className="font-bold text-neutral-700">
-                Firebase
-              </span>
-              .
-            </p>
+            <span className="font-bold text-neutral-700">
+              Firebase
+            </span>
+            .
           </p>
           <Image
             src="/images/BitesWithin-slide1.png"
@@ -185,9 +183,7 @@ const HPEContent = () => {
             <span className="font-bold text-neutral-700">
               Data that are recorded are stored in a google drive spreadsheet.
             </span>
-            <p>
-              The 3D head model is used to demostrate data recording in real-time.
-            </p>
+            The 3D head model is used to demostrate data recording in real-time.
           </p>
           <Image
             src="/images/HPE-desc.jpg"
@@ -211,7 +207,7 @@ const HPEContent = () => {
             alt="description"
             height="1000"
             width="1000"
-            className="md:w-full md:h-full h-full w-full mx-auto object-contain"
+            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
           />
         </div>
 
@@ -228,9 +224,29 @@ const HPEContent = () => {
             alt="description"
             height="1000"
             width="1000"
-            className="md:w-full md:h-full h-full w-full mx-auto object-contain"
+            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
           />
         </div>
+    </>
+  );
+};
+
+const IOTContent = () => {
+  return (
+    <>
+      
+
+      <div
+        className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+      >
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700">
+            Description:
+          </span>{" "}
+          Developed a prototype to simulate a message chair where users will be able to adjust the vibration level. The vibrations are replaced with the strength of an LED light for demostration.
+        </p>
+        <video src="/videos/IOT.MP4" controls className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"/>
+      </div>
     </>
   );
 };
@@ -243,34 +259,22 @@ const data = [
     content: <BitesWithinContent />,
   },
   {
-    category: "Project 2",
+    category: "Project B",
     title: "Head Posture Estimation",
     src: "/images/HPE-front.jpg",
     content: <HPEContent />,
   },
-  {
-    category: "Project 3",
-    title: "TransportTravelGO",
-    src: "",
-    content: <DummyContent />,
-  },
 
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "",
-    content: <DummyContent />,
+    category: "Project C",
+    title: "Dealing With Arduino",
+    src: "/images/IOT-front.jpg",
+    content: <IOTContent />,
   },
-  {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "",
-    content: <DummyContent />,
-  },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "",
-    content: <DummyContent />,
-  },
+  // {
+  //   category: "Project E",
+  //   title: "TransportTravelGO",
+  //   src: "",
+  //   content: <DummyContent />,
+  // },
 ];

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Home, Settings, User, Book } from "lucide-react"
+import { Home, User, File, WorkflowIcon } from "lucide-react"
 import { MenuBar } from "@/components/ui/glow-menu"
 
 const menuItems = [
@@ -14,9 +14,9 @@ const menuItems = [
     iconColor: "text-blue-500",
   },
   {
-    icon: Settings,
+    icon: WorkflowIcon,
     label: "Projects",
-    href: "#projects",
+    href: "/#projects",
     gradient:
       "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
     iconColor: "text-orange-500",
@@ -30,7 +30,7 @@ const menuItems = [
     iconColor: "text-orange-500",
   },
   {
-    icon: Book,
+    icon: File,
     label: "Resume",
     href: "/resume",
     gradient:

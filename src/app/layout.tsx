@@ -6,6 +6,8 @@ import Header from "@/components/Header"
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import  ScrollToTop  from "@/components/ScrollToTop"
+import { FooterSection } from "@/components/Footer";
+import SplashCursor from "@/components/SplashCursor";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,22 +23,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head />
-      <body className={`bg-stone-500/0  ${inter.className}`}>
-        <ShootingStars />
-        <StarsBackground />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`bg-stone-500/0 ${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange>
-          <Header/>
-          {children}
-          <ScrollToTop/>
+          disableTransitionOnChange
+        >
+          <SplashCursor/>
+          <ShootingStars />
+          <StarsBackground />
+          <Header />
+          <main>{children}</main>
+          <FooterSection />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
-
   );
 }

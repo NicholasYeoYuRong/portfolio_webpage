@@ -1,11 +1,11 @@
-import { Hexagon, Github, Instagram, Linkedin, } from "lucide-react"
+import { Hexagon, Github, Instagram, Linkedin, TerminalIcon, } from "lucide-react"
 import { Footer } from "@/components/ui/footer"
 
 function FooterSection() {
   return (
     <div className="w-full relative z-50">
       <Footer
-        logo={<Hexagon className="h-10 w-10" />}
+        logo={<TerminalIcon className="h-10 w-10" />}
         brandName="nickk_yo"
         socialLinks={[
           {

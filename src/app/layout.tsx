@@ -8,6 +8,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import  ScrollToTop  from "@/components/ScrollToTop"
 import { FooterSection } from "@/components/Footer";
 import SplashCursor from "@/components/SplashCursor";
+import ToggleChatbot from "@/components/ToggleChatbot";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`bg-stone-500/0 ${inter.className}`}>
         <ThemeProvider
           attribute="class"
@@ -35,7 +36,10 @@ export default function RootLayout({
           <ShootingStars />
           <StarsBackground />
           <Header />
-          <main>{children}</main>
+          <main>
+            {children}
+            <ToggleChatbot api="/api/chat" title="Barry, AI Assistant" initialOpen={false} />
+          </main>
           <FooterSection />
           <ScrollToTop />
         </ThemeProvider>

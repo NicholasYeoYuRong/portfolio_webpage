@@ -1,5 +1,6 @@
 import ProfileCardUI from '@/components/ui/Profile-card';
 import InfiniteMenu from '@/components/InfiniteMenu';
+import StickeyScrollReveal from '@/components/StickyScrolReveal';
 
 export default function aboutpage() {
 
@@ -167,12 +168,38 @@ export default function aboutpage() {
                 </div>    
 
             </section>
+            <br />
+            <br />
+
+            <section className='w-full h-auto py-20 px-6 md:px-20 bg-gradient-to-tr from-indigo-950 my-20 rounded-xl'>
+                <h1 className='text-6xl font-bold mb-4 flex flex-col justify-center items-center font-mono italic'>Education Path</h1>
+                <StickeyScrollReveal />
+            </section>
 
             <section>
-                <h1 className='text-6xl font-bold mb-4 flex flex-col justify-center items-center font-mono italic'>Experiences</h1>
-                <div className='grid grid-cols-3 md:grid-cols-3 p-6 md:p-8 gap-y-40'>
+                <h1 className='text-6xl font-bold mb-4 flex flex-col justify-center items-center font-mono italic'>Work Experiences</h1>
+                <br />
+                <br />
+                <div className='grid grid-cols-1 md:grid-cols-3 p-6 md:p-8 gap-y-20 justify-center items-center'>
 
                     {/* Intership Experiences */}
+
+                    <img className='w-full h-auto col-span-1' src='/images/ESSILOR.png' alt='internship1'/>
+                    <div className='col-span-2 p-4 md:p-8 flex flex-col justify-center items-start p-4 md:p-6 font-mono italic'>
+                        <h1 className='text-4xl font-bold mb-4'>Essilor - Software Engineer Intern</h1>
+                        <p className='text-lg leading-relaxed mt-4'>
+                            During my internship at Essilor, I had the opportunity to work on a project that involved developing a web application using ReactJS and NodeJS. The application was designed to streamline the process of managing customer orders and inventory for the company's retail stores.
+                        </p>
+                        <p className='text-lg leading-relaxed mt-4'>
+                            As part of the development team, I was responsible for implementing various features of the application, including user authentication, order tracking, and inventory management. I also worked closely with the UI/UX designers to ensure that the application was user-friendly and visually appealing.
+                        </p>
+                        <p className='text-lg leading-relaxed mt-4'>
+                            Throughout the internship, I gained valuable experience in software development, project management, and teamwork. I also had the opportunity to learn about the company's operations and culture, which helped me to better understand the business side of software development.
+                        </p>
+                        <p className='text-lg leading-relaxed mt-4'>
+                            Overall, my internship at Essilor was a rewarding experience that allowed me to apply my technical skills in a real-world setting and gain insights into the software development industry.
+                        </p>
+                    </div>
 
                 </div>
             </section>

@@ -22,7 +22,7 @@ export default function ProfileCardUI() {
             title="Computer Science Student"
             handle="nickk_yo"
             status="Online"
-            contactText="Contact Me"
+            contactText="CONTACT ME"
             avatarUrl="/images/profile_card_pic.jpg"
             showUserInfo={true}
             enableTilt={true}
@@ -42,10 +42,6 @@ export default function ProfileCardUI() {
                                 <span className="font-semibold">Email:</span>
                                 <a href="mailto:nicyeo08@gmail.com" className="text-blue-500 hover:underline">
                                     nicyeo08@gmail.com
-                                </a>
-                                <span className="font-semibold">Phone:</span>
-                                <a href="tel:+6597527286" className="text-blue-500 hover:underline">
-                                    +65 9752 7286
                                 </a>
                                 <span className="font-semibold">LinkedIn:</span>
                                 <a href="https://www.linkedin.com/in/nicholas-yeo-88723a2bb/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">

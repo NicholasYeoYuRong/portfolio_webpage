@@ -48,6 +48,7 @@ export function MenuBarDemo() {
       activeItem={activeItem}
       onItemClick={setActiveItem}
       className="bg-stone"
+      mobileSide="left"
     />
   )
 }

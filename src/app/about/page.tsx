@@ -173,7 +173,7 @@ export default function aboutpage() {
             <br />
             <br />
 
-            <section className='w-full h-auto py-20 px-6 md:px-20 bg-gradient-to-tr from-indigo-950 my-20 rounded-xl'>
+            <section className='w-full h-auto py-20 px-6 md:px-20 bg-linear-to-tr from-indigo-950 my-20 rounded-xl'>
                 <h1 className='text-6xl font-bold mb-4 flex flex-col justify-center items-center font-mono italic'>Education Path</h1>
                 <StickeyScrollReveal />
             </section>

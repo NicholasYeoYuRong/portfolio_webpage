@@ -5,7 +5,7 @@ export default function ResumePage() {
     return (
         <div>
             <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-            <section id="resume" className="mx-auto max-w-3xl px-6 py-12 relative z-[2147483646]">
+            <section id="resume" className="mx-auto max-w-3xl px-6 py-12 relative z-2147483646">
 
                 {/* Header */}
                 <header className="mb-6 print:mb-3">

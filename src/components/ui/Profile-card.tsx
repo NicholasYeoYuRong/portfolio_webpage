@@ -33,7 +33,7 @@ export default function ProfileCardUI() {
             <ModalContent>
                 {(onClose) => (
                     <>
-                    <div className="flex px-10 min-h-[40vh] justify-center items-center flex-col gap-4 max-w-3xl bg-black/80 backdrop-blur-sm rounded-xl p-6">
+                    <div className="flex px-10 min-h-[40vh] justify-center items-center flex-col gap-4 max-w-3xl bg-black/80 backdrop-blur-xs rounded-xl p-6">
                         <ModalHeader className="text-3xl">Connect with me!</ModalHeader>
                         <ModalBody>
                             <p>I'm always open to discussing new opportunities and ideas. Feel free to reach out!</p>

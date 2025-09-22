@@ -104,13 +104,13 @@ export function Globe({
   return (
     <div
       className={cn(
-        "relative mx-auto aspect-[1/1] w-full max-w-[800px]",
+        "relative mx-auto aspect-square w-full max-w-[800px]",
         className,
       )}
     >
       <canvas
         className={cn(
-          "size-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]",
+          "size-full opacity-0 transition-opacity duration-500 contain-[layout_paint_size]",
         )}
         ref={canvasRef}
         onPointerDown={(e) => {

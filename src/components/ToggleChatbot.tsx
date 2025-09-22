@@ -212,7 +212,7 @@ export default function ToggleChatbot({
         aria-expanded={isOpen}
         aria-controls="toggle-chatbot-panel"
         className={cx(
-          "fixed z-50 inline-flex h-14 w-14 items-center justify-center rounded-full border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 shadow-lg hover:shadow-xl transition-all overflow-hidden hover:scale-[1.03] active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500",
+          "fixed z-50 inline-flex h-14 w-14 items-center justify-center rounded-full border bg-background/80 backdrop-blur-sm supports-backdrop-filter:bg-background/70 shadow-lg hover:shadow-xl transition-all overflow-hidden hover:scale-[1.03] active:scale-95 focus:outline-hidden focus:ring-2 focus:ring-indigo-500",
           className,
         )}
         style={offsetStyle}
@@ -239,7 +239,7 @@ export default function ToggleChatbot({
             exit={{opacity: 0, scale: 0.98, y: 8}}
             transition={{type: "spring", stiffness: 380, damping: 32}}
             className={cx(
-              "fixed z-50 grid w-[360px] max-w-[92vw] grid-rows-[auto,1fr,auto] overflow-hidden rounded-2xl border bg-background shadow-2xl",
+              "fixed z-50 grid w-[360px] max-w-[92vw] grid-rows-[auto_1fr_auto] overflow-hidden rounded-2xl border bg-background shadow-2xl",
               side === "right" ? "right-6" : "left-6",
               "bottom-24 sm:bottom-28",
             )}
@@ -332,7 +332,7 @@ export default function ToggleChatbot({
                       handleSend();
                     }
                   }}
-                  className="min-h-[40px] max-h-32 flex-1 resize-none rounded-xl border bg-background p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="min-h-[40px] max-h-32 flex-1 resize-none rounded-xl border bg-background p-2 text-sm focus:outline-hidden focus:ring-2 focus:ring-primary"
                 />
                 <button
                   type="submit"
@@ -365,7 +365,7 @@ function ChatBubble({ message }: { message: UIMessage }) {
     <div className={cx("flex", isUser ? "justify-end" : "justify-start")}>
       <div
         className={cx(
-          "max-w-[85%] rounded-2xl border px-3 py-2 text-sm shadow-sm",
+          "max-w-[85%] rounded-2xl border px-3 py-2 text-sm shadow-xs",
           isUser ? "bg-primary text-primary-foreground" : "bg-muted/50"
         )}
       >

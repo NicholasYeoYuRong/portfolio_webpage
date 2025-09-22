@@ -7,9 +7,13 @@ import { OrbitingIcons } from "@/components/OrbitingIcons";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const texts = [
-  "HELLO !",
-  "NICHOLAS HERE !",
-  "WELCOME TO MY PORTFOLIO !"
+  "HELLO!",
+  "NICHOLAS HERE!",
+  "WELCOME TO MY PORTFOLIO!",
+  "IF YOU HAVE ANY QUESTIONS", 
+  "FEEL FREE TO ASK BARRY!",
+  "MY AI ASSISTANT", 
+  "AT THE BOTTOM RIGHT CORNER!",
 ]
 
 export default function Home() {
@@ -17,7 +21,7 @@ export default function Home() {
     <div>
       
       <div className="relative flex-col items-center justify-center pt-8 h-full overflow-auto px-4 md:px-8 lg:px-16">
-        <MorphingText texts={texts} className="opacity-65" />    
+        <MorphingText texts={texts} className="opacity-65 font-mono italic" />    
         <div className="pt-10 pb-10">
           <Globe />
         </div>
@@ -35,9 +39,9 @@ export default function Home() {
               <AppleCardsCarouselDemo/>  
             </CardSpotlight>   
           </section>
-        </div>    
+        </div>   
 
-        <BackgroundBeamsWithCollision>
+        {/* <BackgroundBeamsWithCollision>
           <div className="flex flex-row items-center justify-around w-full h-full">
               <section className="px-10 max-w-2xl text-lg md:text-2xl lg:text-3xl">
 
@@ -51,7 +55,7 @@ export default function Home() {
               <OrbitingIcons />
             
           </div>
-        </BackgroundBeamsWithCollision>
+        </BackgroundBeamsWithCollision> */}
 
       </div>
       

@@ -229,7 +229,7 @@ const BarryBotContent = () => {
           </span>{" "}
           A telegram Chatbot named "Barry" that is coded using python and it's interactive. It also contains a few commands that users can use to interact with the bot. The bot is deployed and hosted on a cloud platform to ensure 24/7 uptime.
         </p>
-        <video src="/images/BarryBotMedia/start_help.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
+        <video src="/images/BarryBotMedia/start_help.MP4" controls playsInline className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
       </div>
 
       <div

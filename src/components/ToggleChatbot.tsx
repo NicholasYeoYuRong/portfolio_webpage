@@ -2,7 +2,7 @@
 
 import React, {useEffect, useRef, useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
-import {MessageSquare, X, Minus, Send, Loader2} from "lucide-react";
+import {X, Minus, Send, Loader2} from "lucide-react";
 import type { UIMessage, TextPart } from "ai";
 
 // ---------- Types ----------
@@ -212,12 +212,13 @@ export default function ToggleChatbot({
         aria-expanded={isOpen}
         aria-controls="toggle-chatbot-panel"
         className={cx(
-          "fixed z-50 inline-flex h-14 w-14 items-center justify-center rounded-full border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 shadow-lg hover:shadow-xl transition-all",
+          "fixed z-50 inline-flex h-14 w-14 items-center justify-center rounded-full border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70 shadow-lg hover:shadow-xl transition-all overflow-hidden hover:scale-[1.03] active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500",
           className,
         )}
         style={offsetStyle}
       >
-        <MessageSquare className="h-5 w-5" />
+        <img src="/images/BarryBotMedia/BarryIcon.png" alt="Barry Bot Icon" />
+        {/* <BotMessageSquare className="h-8 w-8" /> */}
         {unread > 0 && (
           <span className="absolute -top-1 -right-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-xs font-medium text-primary-foreground">
             {unread}

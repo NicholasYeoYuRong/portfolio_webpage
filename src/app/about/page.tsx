@@ -1,6 +1,7 @@
 import ProfileCardUI from '@/components/ui/Profile-card';
 import InfiniteMenu from '@/components/InfiniteMenu';
 import StickeyScrollReveal from '@/components/StickyScrolReveal';
+import FadeContent from '@/components/FadeContent';
 
 export default function aboutpage() {
 
@@ -129,6 +130,7 @@ export default function aboutpage() {
 
     return(
         <div>
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
             <section className='grid grid-cols-1 md:grid-cols-3 p-6 md:p-8 gap-y-40'>
 
                 <div className='flex flex-col justify-center items-center'>
@@ -203,7 +205,7 @@ export default function aboutpage() {
 
                 </div>
             </section>
-
+            </FadeContent>
         </div>
 
     )

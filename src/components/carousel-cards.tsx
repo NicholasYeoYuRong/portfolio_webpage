@@ -15,38 +15,6 @@ export function AppleCardsCarouselDemo() {
   );
 }
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <Image
-              src=""
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
-  );
-};
-
 const BitesWithinContent = () => {
   return (
     <>
@@ -173,7 +141,7 @@ const HPEContent = () => {
               Quick Demostration
             </span>
           </p>
-          <video src="/videos/HPE.MP4" controls className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"/>
+          <video src="/videos/HPE.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
         </div>
 
         <div
@@ -190,7 +158,7 @@ const HPEContent = () => {
             alt="description"
             height="1000"
             width="1000"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"
           />
         </div>
 
@@ -207,7 +175,7 @@ const HPEContent = () => {
             alt="description"
             height="1000"
             width="1000"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"
           />
         </div>
 
@@ -224,7 +192,7 @@ const HPEContent = () => {
             alt="description"
             height="1000"
             width="1000"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"
           />
         </div>
     </>
@@ -234,8 +202,6 @@ const HPEContent = () => {
 const IOTContent = () => {
   return (
     <>
-      
-
       <div
         className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
       >
@@ -245,28 +211,143 @@ const IOTContent = () => {
           </span>{" "}
           Developed a prototype to simulate a message chair where users will be able to adjust the vibration level. The vibrations are replaced with the strength of an LED light for demostration.
         </p>
-        <video src="/videos/IOT.MP4" controls className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"/>
+        <video src="/videos/IOT.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
       </div>
     </>
   );
 };
 
+const BarryBotContent = () => {
+  return (
+    <>
+      <div
+        className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+      >
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700">
+            Description:
+          </span>{" "}
+          A telegram Chatbot named "Barry" that is coded using python and it's interactive. It also contains a few commands that users can use to interact with the bot. The bot is deployed and hosted on a cloud platform to ensure 24/7 uptime.
+        </p>
+        <video src="/images/BarryBotMedia/start_help.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
+      </div>
+
+      <div
+        className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+      >
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 text-xl md:text-4xl">
+            FUNCTION: Interactions
+          </span>
+        </p>
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto pt-10">
+          <span className="font-bold text-neutral-700">
+            Description:
+          </span>{" "}
+          Users can interact with Barry and ask any questions. Barry will respond accordingly. The responses are generated using llama3.2 model via API calls. An example of a response is shown below.
+        </p>
+        <video src="/images/BarryBotMedia/interaction.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
+      </div>
+
+      <div
+        className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+      >
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 text-xl md:text-4xl">
+            Schedule Management
+          </span>
+        </p>
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto pt-10">
+          <span className="font-bold text-neutral-700">
+            Description:
+          </span>{" "}
+          Barry can also help to keep track of schedules. Barry is able to add, view, and delete schedules using simple commands. Barry interacts directly with iCal to perform these functions.
+        </p>
+        <Image
+            src="/images/BarryBotMedia/upcomingschedule.png"
+            alt="description"
+            height="1000"
+            width="1000"
+            className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"
+          />
+
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto gap-y-10 pt-10">
+          <span className="font-bold text-neutral-700 text-xl md:text-4xl">
+            FUNCTION: ADD Schedule
+          </span>
+        </p>
+
+        <video src="/images/BarryBotMedia/addschedule.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
+
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto gap-y-10 pt-10">
+          <span className="font-bold text-neutral-700 text-xl md:text-4xl">
+            FUNCTION: DELETE Schedule
+          </span>
+        </p>
+
+        <video src="/images/BarryBotMedia/deleteschedule.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
+      </div>
+
+      <div
+        className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+      >
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 text-xl md:text-4xl">
+            FUNCTION: Food Recommendations.
+          </span>
+        </p>
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto pt-10">
+          <span className="font-bold text-neutral-700">
+            Description:
+          </span>{" "}
+          Using the /foodrecommendation command, Barry will be able to provide food recommendations based on the user's current location. It uses Google Maps API to get the location and provide relevant recommendations. Barry would also provide and address link for easy access via Google Maps and including phone number if available. If users are unsure on what to eat, Barry can help to decide! An example of a response is shown below.
+        </p>
+        <video src="/images/BarryBotMedia/foodrecommendations.MP4" controls className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain pt-10"/>
+      </div>
+
+      <div
+        className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+      >
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 text-xl md:text-4xl">
+            CONCLUSION
+          </span>
+        </p>
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto pt-10">   
+          Barry is built to offer a safe, judgment-free space for the conversations people don’t always feel ready to have—showing up with empathy, practical guidance, and steady support. Beyond listening, it’s a pocket AI assistant for everyday tasks—fast, capable, and always within reach. Barry may be my personal assistant, but I designed it to be yours too—whenever you need a hand or simply someone to listen. Feel free to try it out youself at Telegram <a href="https://t.me/AllBarryBot" className="text-blue-500 underline">HERE</a>.
+        </p>
+        <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto pt-10">
+          <span className="font-bold text-neutral-700">
+            P.S. Barry does not store your conversations in any database—your chats are confidential and not retained.
+          </span>
+        </p>
+      </div>
+      
+    </>
+  );
+}
+
 const data = [
   {
-    category: "Project A",
+    category: "Project 1",
+    title: "Telegram Chatbot - Barry",
+    src: "/images/BarryBotMedia/BarryIcon.png",
+    content: <BarryBotContent />,
+  },
+  {
+    category: "Project 2",
+    title: "Head Posture Estimation",
+    src: "/images/HPE-front.jpg",
+    content: <HPEContent />,
+  },
+  {
+    category: "Project 3",
     title: "BitesWithin",
     src: "/images/BitesWithin-front.png",
     content: <BitesWithinContent />,
   },
   {
-    category: "Project B",
-    title: "Head Posture Estimation",
-    src: "/images/HPE-front.jpg",
-    content: <HPEContent />,
-  },
-
-  {
-    category: "Project C",
+    category: "Project 4",
     title: "Dealing With Arduino",
     src: "/images/IOT-front.jpg",
     content: <IOTContent />,

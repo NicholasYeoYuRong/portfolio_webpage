@@ -1,14 +1,10 @@
-import Image from "next/image";
 import { Globe } from "@/components/magicui/globe";
 import { MorphingText } from "@/components/magicui/morphingtext";
 import BreathingText from "@/fancy/components/text/breathing-text";
-import ElasticLine from "@/fancy/components/physics/elastic-line";
-import { TextShimmer } from "@/components/ui/text-shimmer";
 import { AppleCardsCarouselDemo } from "@/components/carousel-cards";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { OrbitingIcons } from "@/components/OrbitingIcons";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import { FooterSection } from "@/components/Footer";
 
 const texts = [
   "HELLO !",
@@ -19,6 +15,7 @@ const texts = [
 export default function Home() {
   return (
     <div>
+      
       <div className="relative flex-col items-center justify-center pt-8 h-full overflow-auto px-4 md:px-8 lg:px-16">
         <MorphingText texts={texts} className="opacity-65" />    
         <div className="pt-10 pb-10">
@@ -57,6 +54,7 @@ export default function Home() {
         </BackgroundBeamsWithCollision>
 
       </div>
+      
     </div>
   );
 }

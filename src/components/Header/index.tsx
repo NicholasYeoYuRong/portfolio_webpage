@@ -8,7 +8,7 @@ export default function Header() {
 
     return(
         <div className="flex justify-between items-center m-5">
-            <div className="flex justify-center items-center flex-grow"> 
+            <div className="flex justify-center items-center grow"> 
                 <MenuBarDemo/>
             </div>
             <Avatar className="flex items-center">

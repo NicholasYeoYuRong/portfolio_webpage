@@ -3,8 +3,6 @@ import { MorphingText } from "@/components/magicui/morphingtext";
 import BreathingText from "@/fancy/components/text/breathing-text";
 import { AppleCardsCarouselDemo } from "@/components/carousel-cards";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
-import { OrbitingIcons } from "@/components/OrbitingIcons";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const texts = [
   "HELLO!",
@@ -40,22 +38,6 @@ export default function Home() {
             </CardSpotlight>   
           </section>
         </div>   
-
-        {/* <BackgroundBeamsWithCollision>
-          <div className="flex flex-row items-center justify-around w-full h-full">
-              <section className="px-10 max-w-2xl text-lg md:text-2xl lg:text-3xl">
-
-                <h1 className="font-bold md:text-4xl">Technical Skills:</h1>
-                <p className="text-xl pt-10">Java, C Programming, Python, C#, HTML, CSS, JavaScript, TypeScript, JQuery, NodeJs, Dart, SQL, Git</p>
-
-                <h1 className="font-bold md:text-4xl pt-20">Software & Tools:</h1>
-                <p className="text-xl pt-10">Git, Linux, Visual Studio Code, Android Studios, NetBeans, Brackets, Arduino</p>
-              </section>
-
-              <OrbitingIcons />
-            
-          </div>
-        </BackgroundBeamsWithCollision> */}
 
       </div>
       

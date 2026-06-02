@@ -199,7 +199,11 @@ export const MenuBar = React.forwardRef<HTMLDivElement, MenuBarProps>(
           aria-pressed={open}
           onClick={() => setOpen((v) => !v)}
           className={cn(
-            "md:hidden fixed top-4 z-[90] inline-flex h-10 w-10 items-center justify-center",
+            "md:hidden fixed top-4 z-[90] inline-flex h-10 w-10 items-center justify-center", // md:hidden to show only on mobile
+            // "rounded-lg bg-background/70 backdrop-blur-md border border-border/40 shadow-lg",
+            // "hover:bg-background/80 active:bg-background/90",
+            // "focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background",
+            // "transition-all duration-200",
             mobileSide === "left" ? "left-4" : "right-4"
           )}
         >
